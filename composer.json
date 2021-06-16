@@ -17,6 +17,7 @@
         "fideloper/proxy": "^4.4",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
+        "illuminate/support": "^7.0|^8.0",
         "joy/voyager-api": "dev-main",
         "laravel/framework": "~6.0|~7.0|~8.0",
         "laravel/tinker": "^2.5",
