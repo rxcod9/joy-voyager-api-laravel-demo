@@ -18,7 +18,6 @@
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.0.1",
         "joy/voyager-api": "dev-main",
-        "laravel/framework": "^8.40",
         "laravel/tinker": "^2.5",
         "tcg/voyager": "^1.4"
     },
