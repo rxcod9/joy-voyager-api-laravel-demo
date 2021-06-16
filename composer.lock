@@ -1812,12 +1812,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api.git",
-                "reference": "771b3d298bf1bbb815835f650e46d54db325ab45"
+                "reference": "8fe8a36366408ee722bad12da86a62335d1a6bf7"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/771b3d298bf1bbb815835f650e46d54db325ab45",
-                "reference": "771b3d298bf1bbb815835f650e46d54db325ab45",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/8fe8a36366408ee722bad12da86a62335d1a6bf7",
+                "reference": "8fe8a36366408ee722bad12da86a62335d1a6bf7",
                 "shasum": ""
             },
             "require": {
@@ -1878,7 +1878,7 @@
                 "issues": "https://github.com/rxcod9/joy-voyager-api/issues",
                 "source": "https://github.com/rxcod9/joy-voyager-api/tree/main"
             },
-            "time": "2021-06-16T19:30:36+00:00"
+            "time": "2021-06-16T20:14:25+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
