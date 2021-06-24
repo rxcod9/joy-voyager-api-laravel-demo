@@ -58,11 +58,17 @@ If you prefer installing it with dummy run
 php artisan voyager:install --with-dummy
 ```
 
+To re-generate swagger docs run
+
+```bash
+php artisan joy-voyager-api:l5-swagger:generate
+```
+
 And we're all good to go!
 
 Start up a local development server with `php artisan serve` And, visit [http://localhost:8000/admin](http://localhost:8000/admin).
 
-To check the api feature visit [http://localhost:8000/admin/users/api](http://localhost:8000/admin/users/api) or any bread [http://localhost:8000/admin/{slug}/api](http://localhost:8000/admin/{slug}/api).
+To check the swagger api docs feature visit [http://localhost:8000/api/documentation](http://localhost:8000/api/documentation).
 
 ## Creating an Admin User
 
