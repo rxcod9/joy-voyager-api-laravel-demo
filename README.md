@@ -9,6 +9,10 @@ By 🐼 [Ramakant Gangwar](https://github.com/rxcod9)
 
 Laravel Admin & BREAD System (API with swagger support)
 
+## Working Example
+
+You can try laravel demo here [https://joy-voyager-api.herokuapp.com/api/documentation](https://joy-voyager-api.herokuapp.com/api/documentation).
+
 ## Installation Steps
 
 ### 1. Clone repo/Install Using Composer
