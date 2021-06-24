@@ -9,7 +9,11 @@
         "voyager",
         "api",
         "swagger",
-        "demo"
+        "demo",
+        "voyager-api",
+        "joy-voyager-api",
+        "swagger-ui",
+        "cms"
     ],
     "license": "MIT",
     "require": {
