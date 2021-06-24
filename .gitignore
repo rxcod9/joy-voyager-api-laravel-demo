@@ -23,8 +23,7 @@ public/js/**
 !/.vscode/launch.json.dist
 !/.vscode/launch.json.docker.dist
 .env.docker.bak
-public/docs/api-docs.json
-public/docs/voyager-api-docs.json
+# public/docs/*api-docs.json
 *.patch
 composer.dev.json
 composer.json.dist

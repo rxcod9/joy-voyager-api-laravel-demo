@@ -2030,12 +2030,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api.git",
-                "reference": "6db4a9acb0f53894ccbdda8c5221bce32114c5be"
+                "reference": "36df8c4c29caa0ea178f3a507076725df327e6de"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/6db4a9acb0f53894ccbdda8c5221bce32114c5be",
-                "reference": "6db4a9acb0f53894ccbdda8c5221bce32114c5be",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/36df8c4c29caa0ea178f3a507076725df327e6de",
+                "reference": "36df8c4c29caa0ea178f3a507076725df327e6de",
                 "shasum": ""
             },
             "require": {
@@ -2086,7 +2086,7 @@
                     "role": "Tech Lead"
                 }
             ],
-            "description": "Joy VoyagerApi",
+            "description": "This Laravel/Voyager module adds REST Api with swagger support to Voyager.",
             "homepage": "https://github.com/rxcod9/joy-voyager-api",
             "keywords": [
                 "api",
@@ -2103,7 +2103,7 @@
                 "issues": "https://github.com/rxcod9/joy-voyager-api/issues",
                 "source": "https://github.com/rxcod9/joy-voyager-api/tree/main"
             },
-            "time": "2021-06-24T06:46:47+00:00"
+            "time": "2021-06-24T22:10:58+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
