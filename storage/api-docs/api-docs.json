@@ -7,7 +7,7 @@
     },
     "servers": [
         {
-            "url": "https:\/\/joy-voyager-api.herokuapp.com",
+            "url": "http:\/\/localhost",
             "description": "Primary API Server"
         }
     ],
