@@ -7,7 +7,7 @@ By 🐼 [Ramakant Gangwar](https://github.com/rxcod9)
 
 <hr>
 
-Laravel Admin & BREAD System (API with swagger support)
+Laravel Admin & BREAD System (API with Passport and Swagger support)
 
 ## Working Example
 

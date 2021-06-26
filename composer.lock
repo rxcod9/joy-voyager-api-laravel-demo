@@ -2218,12 +2218,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api.git",
-                "reference": "523b3fdb0da101cfb5838c391f45bcf2fea586a1"
+                "reference": "db37b7ac8ad779347e0a7051d13698e09fc5047c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/523b3fdb0da101cfb5838c391f45bcf2fea586a1",
-                "reference": "523b3fdb0da101cfb5838c391f45bcf2fea586a1",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/db37b7ac8ad779347e0a7051d13698e09fc5047c",
+                "reference": "db37b7ac8ad779347e0a7051d13698e09fc5047c",
                 "shasum": ""
             },
             "require": {
@@ -2292,7 +2292,7 @@
                 "issues": "https://github.com/rxcod9/joy-voyager-api/issues",
                 "source": "https://github.com/rxcod9/joy-voyager-api/tree/main"
             },
-            "time": "2021-06-26T19:57:37+00:00"
+            "time": "2021-06-26T20:52:53+00:00"
         },
         {
             "name": "joy/voyager-api-auth",
@@ -2300,12 +2300,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api-auth.git",
-                "reference": "148cd54af5278ca6e77d71a5ec25085c74934c2e"
+                "reference": "f21d656efa53a98342840bbafd9891cebd69533b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/148cd54af5278ca6e77d71a5ec25085c74934c2e",
-                "reference": "148cd54af5278ca6e77d71a5ec25085c74934c2e",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api-auth/zipball/f21d656efa53a98342840bbafd9891cebd69533b",
+                "reference": "f21d656efa53a98342840bbafd9891cebd69533b",
                 "shasum": ""
             },
             "require": {
@@ -2372,7 +2372,7 @@
                 "issues": "https://github.com/rxcod9/joy-voyager-api-auth/issues",
                 "source": "https://github.com/rxcod9/joy-voyager-api-auth/tree/main"
             },
-            "time": "2021-06-26T19:50:55+00:00"
+            "time": "2021-06-26T20:49:17+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
