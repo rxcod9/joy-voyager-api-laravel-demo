@@ -2,7 +2,7 @@
     "openapi": "3.0.0",
     "info": {
         "title": "Joy Voyager Api Laravel Demo",
-        "description": "Api documentation",
+        "description": "Joy VoyagerApi module adds REST Api end points to Voyager with Passport and Swagger support https:\/\/github.com\/rxcod9\/joy-voyager-api.",
         "version": "1.0.0"
     },
     "servers": [
@@ -37,7 +37,7 @@
                                     "email": {
                                         "type": "string",
                                         "format": "email",
-                                        "example": "user@user.com"
+                                        "example": "admin@admin.com"
                                     },
                                     "password": {
                                         "type": "string",
@@ -188,7 +188,7 @@
                                     "email": {
                                         "type": "string",
                                         "format": "email",
-                                        "example": "user@user.com"
+                                        "example": "user001@user.com"
                                     },
                                     "password": {
                                         "type": "string",
