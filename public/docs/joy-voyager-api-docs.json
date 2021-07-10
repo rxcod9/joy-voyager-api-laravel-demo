@@ -278,6 +278,16 @@
                 ],
                 "summary": "users update",
                 "operationId": "users_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "requestBody": {
                     "$ref": "#\/components\/requestBodies\/VoyagerUsersUpdateRequest"
                 },
@@ -731,6 +741,16 @@
                 ],
                 "summary": "menus update",
                 "operationId": "menus_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "requestBody": {
                     "$ref": "#\/components\/requestBodies\/VoyagerMenusUpdateRequest"
                 },
@@ -1192,6 +1212,16 @@
                 ],
                 "summary": "roles update",
                 "operationId": "roles_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "requestBody": {
                     "$ref": "#\/components\/requestBodies\/VoyagerRolesUpdateRequest"
                 },
@@ -1661,6 +1691,16 @@
                 ],
                 "summary": "categories update",
                 "operationId": "categories_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "requestBody": {
                     "$ref": "#\/components\/requestBodies\/VoyagerCategoriesUpdateRequest"
                 },
@@ -2164,6 +2204,16 @@
                 ],
                 "summary": "posts update",
                 "operationId": "posts_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "requestBody": {
                     "$ref": "#\/components\/requestBodies\/VoyagerPostsUpdateRequest"
                 },
@@ -2650,6 +2700,16 @@
                 ],
                 "summary": "pages update",
                 "operationId": "pages_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ],
                 "requestBody": {
                     "$ref": "#\/components\/requestBodies\/VoyagerPagesUpdateRequest"
                 },
