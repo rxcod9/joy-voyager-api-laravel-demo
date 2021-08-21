@@ -582,6 +582,94 @@
                 ]
             }
         },
+        "\/api\/users\/{id}\/single\/{field}": {
+            "post": {
+                "tags": [
+                    "users"
+                ],
+                "summary": "users single update",
+                "operationId": "users_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "name",
+                                "email",
+                                "password",
+                                "avatar",
+                                "role_id",
+                                "user_belongsto_role_relationship",
+                                "user_belongstomany_role_relationship"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "name",
+                                    "email",
+                                    "password",
+                                    "avatar",
+                                    "role_id",
+                                    "user_belongsto_role_relationship",
+                                    "user_belongstomany_role_relationship"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerUsersSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerUsersReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
         "\/api\/users\/{id}\/edit": {
             "get": {
                 "tags": [
@@ -1025,6 +1113,82 @@
                                     "properties": {
                                         "message": {
                                             "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/menus\/{id}\/single\/{field}": {
+            "put": {
+                "tags": [
+                    "menus"
+                ],
+                "summary": "menus single update",
+                "operationId": "menus_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "name"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "name"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerMenusSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerMenusReadResource"
                                         }
                                     }
                                 }
@@ -1516,6 +1680,84 @@
                 ]
             }
         },
+        "\/api\/roles\/{id}\/single\/{field}": {
+            "put": {
+                "tags": [
+                    "roles"
+                ],
+                "summary": "roles single update",
+                "operationId": "roles_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "name",
+                                "display_name"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "name",
+                                    "display_name"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerRolesSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerRolesReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
         "\/api\/roles\/{id}\/edit": {
             "get": {
                 "tags": [
@@ -1975,6 +2217,88 @@
                                     "properties": {
                                         "message": {
                                             "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/categories\/{id}\/single\/{field}": {
+            "put": {
+                "tags": [
+                    "categories"
+                ],
+                "summary": "categories single update",
+                "operationId": "categories_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "parent_id",
+                                "order",
+                                "name",
+                                "slug"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "parent_id",
+                                    "order",
+                                    "name",
+                                    "slug"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerCategoriesSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerCategoriesReadResource"
                                         }
                                     }
                                 }
@@ -2508,6 +2832,104 @@
                 ]
             }
         },
+        "\/api\/posts\/{id}\/single\/{field}": {
+            "post": {
+                "tags": [
+                    "posts"
+                ],
+                "summary": "posts single update",
+                "operationId": "posts_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "author_id",
+                                "category_id",
+                                "title",
+                                "excerpt",
+                                "body",
+                                "image",
+                                "slug",
+                                "meta_description",
+                                "meta_keywords",
+                                "status",
+                                "seo_title",
+                                "featured"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "author_id",
+                                    "category_id",
+                                    "title",
+                                    "excerpt",
+                                    "body",
+                                    "image",
+                                    "slug",
+                                    "meta_description",
+                                    "meta_keywords",
+                                    "status",
+                                    "seo_title",
+                                    "featured"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerPostsSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPostsReadResource"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
         "\/api\/posts\/{id}\/edit": {
             "get": {
                 "tags": [
@@ -2984,6 +3406,96 @@
                                     "properties": {
                                         "message": {
                                             "type": "string"
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    },
+                    "401": {
+                        "description": "Unauthenticated"
+                    },
+                    "403": {
+                        "description": "Forbidden"
+                    }
+                },
+                "security": [
+                    {
+                        "token": []
+                    }
+                ]
+            }
+        },
+        "\/api\/pages\/{id}\/single\/{field}": {
+            "post": {
+                "tags": [
+                    "pages"
+                ],
+                "summary": "pages single update",
+                "operationId": "pages_single_update",
+                "parameters": [
+                    {
+                        "name": "id",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    },
+                    {
+                        "name": "field",
+                        "in": "path",
+                        "required": false,
+                        "schema": {
+                            "type": "string",
+                            "nullable": true,
+                            "enum": [
+                                "title",
+                                "excerpt",
+                                "body",
+                                "slug",
+                                "meta_description",
+                                "meta_keywords",
+                                "status",
+                                "image"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "fields[]",
+                        "in": "query",
+                        "required": false,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string",
+                                "enum": [
+                                    "title",
+                                    "excerpt",
+                                    "body",
+                                    "slug",
+                                    "meta_description",
+                                    "meta_keywords",
+                                    "status",
+                                    "image"
+                                ]
+                            }
+                        }
+                    }
+                ],
+                "requestBody": {
+                    "$ref": "#\/components\/requestBodies\/VoyagerPagesSingleUpdateRequest"
+                },
+                "responses": {
+                    "200": {
+                        "description": "Success",
+                        "content": {
+                            "application\/json": {
+                                "schema": {
+                                    "type": "object",
+                                    "properties": {
+                                        "data": {
+                                            "$ref": "#\/components\/schemas\/VoyagerPagesReadResource"
                                         }
                                     }
                                 }
@@ -3602,6 +4114,10 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "name": {
                                     "type": "string",
                                     "description": "Name"
@@ -3643,6 +4159,55 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "email": {
+                                    "type": "string",
+                                    "description": "Email"
+                                },
+                                "password": {
+                                    "type": "password",
+                                    "description": "Password"
+                                },
+                                "avatar": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "role_id": {
+                                    "type": "string",
+                                    "description": "Role"
+                                },
+                                "user_belongsto_role_relationship": {
+                                    "type": "integer",
+                                    "description": "Role"
+                                },
+                                "user_belongstomany_role_relationship": {
+                                    "type": "integer",
+                                    "description": "Roles"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerUsersSingleUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "name": {
                                     "type": "string",
                                     "description": "Name"
@@ -3684,6 +4249,10 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "name": {
                                     "type": "string",
                                     "description": "Name"
@@ -3700,6 +4269,30 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerMenusSingleUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "name": {
                                     "type": "string",
                                     "description": "Name"
@@ -3716,6 +4309,10 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "name": {
                                     "type": "string",
                                     "description": "Name"
@@ -3736,6 +4333,34 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "display_name": {
+                                    "type": "string",
+                                    "description": "Display Name"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerRolesSingleUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "name": {
                                     "type": "string",
                                     "description": "Name"
@@ -3756,6 +4381,10 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "parent_id": {
                                     "enum": [
                                         ""
@@ -3787,6 +4416,45 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "parent_id": {
+                                    "enum": [
+                                        ""
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"\": \"-- None --\"\n}"
+                                },
+                                "order": {
+                                    "type": "string",
+                                    "description": "Order"
+                                },
+                                "name": {
+                                    "type": "string",
+                                    "description": "Name"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerCategoriesSingleUpdateRequest": {
+                "content": {
+                    "application\/x-www-form-urlencoded": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "parent_id": {
                                     "enum": [
                                         ""
@@ -3818,6 +4486,10 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "category_id": {
                                     "type": "string",
                                     "description": "Category"
@@ -3880,6 +4552,80 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "author_id": {
+                                    "type": "string",
+                                    "description": "Author"
+                                },
+                                "category_id": {
+                                    "type": "string",
+                                    "description": "Category"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Title"
+                                },
+                                "excerpt": {
+                                    "type": "string",
+                                    "description": "Excerpt"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "description": "Body"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                },
+                                "meta_description": {
+                                    "type": "string",
+                                    "description": "Meta Description"
+                                },
+                                "meta_keywords": {
+                                    "type": "string",
+                                    "description": "Meta Keywords"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "PUBLISHED",
+                                        "DRAFT",
+                                        "PENDING"
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"PUBLISHED\": \"published\",\n    \"DRAFT\": \"draft\",\n    \"PENDING\": \"pending\"\n}"
+                                },
+                                "seo_title": {
+                                    "type": "string",
+                                    "description": "SEO Title"
+                                },
+                                "featured": {
+                                    "type": "string",
+                                    "description": "Featured"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerPostsSingleUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "author_id": {
                                     "type": "string",
                                     "description": "Author"
@@ -3946,6 +4692,10 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "title": {
                                     "type": "string",
                                     "description": "Title"
@@ -3995,6 +4745,63 @@
                         "schema": {
                             "type": "object",
                             "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
+                                "title": {
+                                    "type": "string",
+                                    "description": "Title"
+                                },
+                                "excerpt": {
+                                    "type": "string",
+                                    "description": "Excerpt"
+                                },
+                                "body": {
+                                    "type": "string",
+                                    "description": "Body"
+                                },
+                                "slug": {
+                                    "type": "string",
+                                    "description": "Slug"
+                                },
+                                "meta_description": {
+                                    "type": "string",
+                                    "description": "Meta Description"
+                                },
+                                "meta_keywords": {
+                                    "type": "string",
+                                    "description": "Meta Keywords"
+                                },
+                                "status": {
+                                    "enum": [
+                                        "INACTIVE",
+                                        "ACTIVE"
+                                    ],
+                                    "type": "string",
+                                    "description": "{\n    \"INACTIVE\": \"INACTIVE\",\n    \"ACTIVE\": \"ACTIVE\"\n}"
+                                },
+                                "image": {
+                                    "type": "string",
+                                    "description": "jpg,jpeg,png",
+                                    "format": "binary"
+                                }
+                            }
+                        }
+                    }
+                },
+                "required": true
+            },
+            "VoyagerPagesSingleUpdateRequest": {
+                "content": {
+                    "multipart\/form-data": {
+                        "schema": {
+                            "type": "object",
+                            "properties": {
+                                "dry-run": {
+                                    "type": "boolean",
+                                    "description": "Use dry-run only to validate"
+                                },
                                 "title": {
                                     "type": "string",
                                     "description": "Title"
