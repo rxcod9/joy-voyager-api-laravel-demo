@@ -7,7 +7,7 @@
     },
     "servers": [
         {
-            "url": "http:\/\/voyager-api.localhost",
+            "url": "http:\/\/localhost",
             "description": "Primary API Server"
         }
     ],
