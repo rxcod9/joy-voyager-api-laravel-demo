@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "4d8734482ce79627028a768d4c569d7d",
+    "content-hash": "c0f1cd41ceb84f4bf9232cde8bab8366",
     "packages": [
         {
             "name": "arrilot/laravel-widgets",
@@ -2516,16 +2516,16 @@
         },
         {
             "name": "joy/voyager-api",
-            "version": "dev-main",
+            "version": "v1.0.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-api.git",
-                "reference": "8bdfc09ec7f1deab3d41ca850a617d505232660a"
+                "reference": "c13c9413731efd4e542aa64c918c755fcaf6d8cf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/8bdfc09ec7f1deab3d41ca850a617d505232660a",
-                "reference": "8bdfc09ec7f1deab3d41ca850a617d505232660a",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-api/zipball/c13c9413731efd4e542aa64c918c755fcaf6d8cf",
+                "reference": "c13c9413731efd4e542aa64c918c755fcaf6d8cf",
                 "shasum": ""
             },
             "require": {
@@ -2548,7 +2548,6 @@
                 "orchestra/testbench": "^5.0|^6.0",
                 "phpunit/phpunit": "9.5.7"
             },
-            "default-branch": true,
             "type": "library",
             "extra": {
                 "laravel": {
@@ -2593,7 +2592,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-api/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.0.6"
+                "source": "https://github.com/rxcod9/joy-voyager-api/tree/v1.0.7"
             },
             "funding": [
                 {
@@ -2601,7 +2600,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-05T16:03:25+00:00"
+            "time": "2022-03-05T20:12:42+00:00"
         },
         {
             "name": "joy/voyager-api-auth",
@@ -11627,13 +11626,36 @@
     ],
     "aliases": [],
     "minimum-stability": "dev",
-    "stability-flags": {
-        "joy/voyager-api": 20
-    },
+    "stability-flags": [],
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.3|^8.0"
+        "php": "^7.3|^8.0",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-exif": "*",
+        "ext-fileinfo": "*",
+        "ext-filter": "*",
+        "ext-gd": "*",
+        "ext-iconv": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-libxml": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-pcntl": "*",
+        "ext-pcov": "*",
+        "ext-pcre": "*",
+        "ext-pdo": "*",
+        "ext-pdo_sqlite": "*",
+        "ext-phar": "*",
+        "ext-posix": "*",
+        "ext-soap": "*",
+        "ext-tokenizer": "*",
+        "ext-xml": "*",
+        "ext-xmlwriter": "*",
+        "ext-zip": "*",
+        "ext-zlib": "*"
     },
     "platform-dev": [],
     "plugin-api-version": "2.2.0"
