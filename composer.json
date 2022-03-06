@@ -18,7 +18,7 @@
     "license": "MIT",
     "require": {
         "php": "^7.3|^8.0",
-        "fakerphp/faker": "1.15.0",
+        "fakerphp/faker": "1.19.0",
         "fideloper/proxy": "4.4.1",
         "fruitcake/laravel-cors": "2.2.0",
         "guzzlehttp/guzzle": "7.4.1",
