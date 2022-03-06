@@ -28,7 +28,7 @@
         "tcg/voyager": "^1.4"
     },
     "require-dev": {
-        "barryvdh/laravel-debugbar": "3.6.2",
+        "barryvdh/laravel-debugbar": "3.6.7",
         "facade/ignition": "2.10.2",
         "friendsofphp/php-cs-fixer": "3.0.0",
         "laravel/sail": "1.8.6",
