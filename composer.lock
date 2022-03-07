@@ -2867,16 +2867,16 @@
         },
         {
             "name": "joy/voyager-datatable",
-            "version": "v1.0.4",
+            "version": "v1.0.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-datatable.git",
-                "reference": "76db74c1cfd1014765cf4ba222c498f1c2c4b8b0"
+                "reference": "96164eb6318cca39a2eefd78bd7efaa2592799cb"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/76db74c1cfd1014765cf4ba222c498f1c2c4b8b0",
-                "reference": "76db74c1cfd1014765cf4ba222c498f1c2c4b8b0",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-datatable/zipball/96164eb6318cca39a2eefd78bd7efaa2592799cb",
+                "reference": "96164eb6318cca39a2eefd78bd7efaa2592799cb",
                 "shasum": ""
             },
             "require": {
@@ -2936,7 +2936,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-datatable/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.0.4"
+                "source": "https://github.com/rxcod9/joy-voyager-datatable/tree/v1.0.5"
             },
             "funding": [
                 {
@@ -2944,7 +2944,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-07T06:52:47+00:00"
+            "time": "2022-03-07T07:48:40+00:00"
         },
         {
             "name": "joy/voyager-export",
@@ -3031,16 +3031,16 @@
         },
         {
             "name": "joy/voyager-relations-table",
-            "version": "v1.0.1",
+            "version": "v1.0.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/rxcod9/joy-voyager-relations-table.git",
-                "reference": "3c45bd97a12be9fef293d0763a97b99a5f2e7abb"
+                "reference": "df65b4af698de594fde05e51d0df1368060e1a16"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/3c45bd97a12be9fef293d0763a97b99a5f2e7abb",
-                "reference": "3c45bd97a12be9fef293d0763a97b99a5f2e7abb",
+                "url": "https://api.github.com/repos/rxcod9/joy-voyager-relations-table/zipball/df65b4af698de594fde05e51d0df1368060e1a16",
+                "reference": "df65b4af698de594fde05e51d0df1368060e1a16",
                 "shasum": ""
             },
             "require": {
@@ -3103,7 +3103,7 @@
             ],
             "support": {
                 "issues": "https://github.com/rxcod9/joy-voyager-relations-table/issues",
-                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.0.1"
+                "source": "https://github.com/rxcod9/joy-voyager-relations-table/tree/v1.0.2"
             },
             "funding": [
                 {
@@ -3111,7 +3111,7 @@
                     "type": "patreon"
                 }
             ],
-            "time": "2022-03-07T06:53:10+00:00"
+            "time": "2022-03-07T07:49:23+00:00"
         },
         {
             "name": "justinrainbow/json-schema",
@@ -8772,16 +8772,16 @@
         },
         {
             "name": "symfony/translation",
-            "version": "v5.4.5",
+            "version": "v5.4.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/translation.git",
-                "reference": "7e4d52d39e5d86f3f04bef46fa29a1091786bc73"
+                "reference": "a7ca9fdfffb0174209440c2ffa1dee228e15d95b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/translation/zipball/7e4d52d39e5d86f3f04bef46fa29a1091786bc73",
-                "reference": "7e4d52d39e5d86f3f04bef46fa29a1091786bc73",
+                "url": "https://api.github.com/repos/symfony/translation/zipball/a7ca9fdfffb0174209440c2ffa1dee228e15d95b",
+                "reference": "a7ca9fdfffb0174209440c2ffa1dee228e15d95b",
                 "shasum": ""
             },
             "require": {
@@ -8849,7 +8849,7 @@
             "description": "Provides tools to internationalize your application",
             "homepage": "https://symfony.com",
             "support": {
-                "source": "https://github.com/symfony/translation/tree/v5.4.5"
+                "source": "https://github.com/symfony/translation/tree/v5.4.6"
             },
             "funding": [
                 {
@@ -8865,7 +8865,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2022-02-09T15:49:12+00:00"
+            "time": "2022-03-02T12:56:28+00:00"
         },
         {
             "name": "symfony/translation-contracts",
