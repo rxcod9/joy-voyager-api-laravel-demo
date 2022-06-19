@@ -27,6 +27,7 @@
         "joy/voyager-export": "^1.0",
         "joy/voyager-relations-table": "^1.0",
         "laravel/framework": "~6.0|~7.0|~8.0",
+        "laravel/passport": "^10.4",
         "laravel/tinker": "2.7.0",
         "tcg/voyager": "^1.4"
     },
