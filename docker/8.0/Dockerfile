@@ -1,4 +1,4 @@
-FROM ubuntu:21.10
+FROM ubuntu:impish-20220531
 
 LABEL maintainer="Taylor Otwell"
 
