@@ -19,7 +19,7 @@
     "require": {
         "php": "^7.3|^8.0",
         "fakerphp/faker": "1.19.0",
-        "fideloper/proxy": "4.4.1",
+        "fideloper/proxy": "4.4.2",
         "fruitcake/laravel-cors": "3.0.0",
         "guzzlehttp/guzzle": "7.4.1",
         "joy/voyager-api": "^1.0",
